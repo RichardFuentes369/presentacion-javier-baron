@@ -10,12 +10,12 @@ let Resource = {
 						frameworks: [
 							{
 								name: 'Laravel',
-								icono: '',
+								icono: '../img/laravel.png',
 								estado: ''
 							},
 							{
 								name: 'Codeigniter',
-								icono: '',
+								icono: '../img/codeigniter.png',
 								estado: ''
 							}
 						]
@@ -26,17 +26,17 @@ let Resource = {
 						frameworks: [
 							{
 								name: 'JavaServer Faces',
-								icono: '',
+								icono: '../img/laravel.png',
 								estado: ''
 							},
 							{
 								name: 'Hibernate',
-								icono: '',
+								icono: '../img/hibernate.svg',
 								estado: ''
 							},
 							{
 								name: 'SpringFramework',
-								icono: '',
+								icono: '../img/spring.png',
 								estado: ''
 							}
 						]
@@ -47,7 +47,7 @@ let Resource = {
 						frameworks: [
 							{
 								name: 'Express',
-								icono: '',
+								icono: '../img/express.png',
 								estado: ''
 							}
 						]
@@ -60,22 +60,54 @@ let Resource = {
 						frameworks: [
 							{
 								name: 'JQuery',
-								icono: '',
+								icono: '../img/jquery.png',
 								estado: ''
 							},
 							{
 								name: 'Vue.js',
-								icono: '',
+								icono: '../img/vue.png',
 								estado: ''
 							},
 							{
 								name: 'Vue 2',
-								icono: '',
+								icono: '../img/vue.png',
 								estado: ''
 							},
 							{
 								name: 'Angular js',
-								icono: '',
+								icono: '../img/angular.svg',
+								estado: ''
+							}
+						]
+
+					},
+					{
+						name: 'Css',
+						icono: '',
+						frameworks: [
+							{
+								name: 'Element IO',
+								icono: '../img/laravel.png',
+								estado: ''
+							},
+							{
+								name: 'Bootstrap',
+								icono: '../img/boostrap.png',
+								estado: ''
+							},
+							{
+								name: 'Bootstrap-Vue',
+								icono: '../img/boostrapvue.png',
+								estado: ''
+							},
+							{
+								name: 'FontAwesome',
+								icono: '../img/fontawesome.svg',
+								estado: ''
+							},
+							{
+								name: 'PrimeFaces',
+								icono: '../img/primefaces.png',
 								estado: ''
 							}
 						]
@@ -89,17 +121,17 @@ let Resource = {
 						db: [
 							{
 								name: 'MySql',
-								icono: '',
+								icono: '../img/mysql.png',
 								estado: ''
 							},
 							{
 								name: 'PostgreSql',
-								icono: '',
+								icono: '../img/postgresql.svg',
 								estado: ''
 							},
 							{
 								name: 'SqlServer',
-								icono: '',
+								icono: '../img/sqlserver.png',
 								estado: ''
 							}
 						]
@@ -112,12 +144,12 @@ let Resource = {
 						lista: [
 							{
 								name: 'GitHub',
-								icono: '',
+								icono: '../img/github.png',
 								estado: ''
 							},
 							{
 								name: 'GitLab',
-								icono: '',
+								icono: '../img/gitlab.svg',
 								estado: ''
 							}
 						]
@@ -159,8 +191,8 @@ let Resource = {
 						<div class="card-body">
 							<h5 class="card-title text-center">{{lbackend.name}}</h5>
 							<p class="card-text">{{lbackend.icono}}</p>
-							<ul v-for="(fbackend, index4) in lbackend.frameworks">
-								<l1>{{fbackend.name}}</li>
+							<ul v-for="(fbackend, index4) in lbackend.frameworks" class="p-0">
+								<l1><img :src="fbackend.icono" style="height: 2rem; width: 2rem;" alt="">{{fbackend.name}}</li>
 							</ul>
 						</div>
 					</div>
@@ -173,8 +205,8 @@ let Resource = {
 						<div class="card-body">
 							<h5 class="card-title text-center">{{lfronted.name}}</h5>
 							<p class="card-text">{{lfronted.icono}}</p>
-							<ul v-for="(ffrontend, index4) in lfronted.frameworks">
-								<l1>{{ffrontend.name}}</li>
+							<ul v-for="(ffrontend, index4) in lfronted.frameworks" class="p-0">
+								<l1><img :src="ffrontend.icono" style="height: 2rem; width: 2rem;" alt="">{{ffrontend.name}}</li>
 							</ul>
 						</div>
 					</div>
@@ -187,8 +219,8 @@ let Resource = {
 						<div class="card-body">
 							<h5 class="card-title text-center">{{database.name}}</h5>
 							<p class="card-text">{{database.icono}}</p>
-							<ul v-for="(db, index6) in database.db">
-								<l1>{{db.name}}</li>
+							<ul v-for="(db, index6) in database.db" class="p-0">
+								<l1><img :src="db.icono" style="height: 2rem; width: 2rem;" alt="">{{db.name}}</li>
 							</ul>
 						</div>
 					</div>
@@ -201,8 +233,8 @@ let Resource = {
 					<div class="card-body">
 						<h5 class="card-title text-center">{{version.name}}</h5>
 						<p class="card-text">{{version.icono}}</p>
-						<ul v-for="(lversionadores, index8) in version.lista">
-							<l1>{{lversionadores.name}}</li>
+						<ul v-for="(lversionadores, index8) in version.lista" class="p-0">
+							<l1><img :src="lversionadores.icono" style="height: 2rem; width: 2rem;" alt="">{{lversionadores.name}}</li>
 						</ul>
 					</div>
 				</div>
