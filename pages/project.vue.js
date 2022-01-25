@@ -102,13 +102,31 @@ let Project = {
 			}
 		}
 	},
+	mounted(){
+		this.cargando()
+	},
+	methods: {
+		cargando(){
+			window.document.getElementById('cargando').style.display = ""
+			window.document.getElementById('contenido').style.display = "none"
+			setTimeout(function(){
+				window.document.getElementById('cargando').style.display = "none"
+				window.document.getElementById('contenido').style.display = ""
+			}, 600)
+		}
+	},
 	template: `
 		<div>
 			<div class="row text-center mt-4">
 				<h3>{{model.title}}<h3>
 			</div>
+
+			<div class="preloaderPadre" id="cargando">
+				<div class="preloaderHijo">
+				</div>
+			</div>
 			
-			<div class="col-sm-12 row">
+			<div class="col-sm-12 row" id="contenido">
 				<div calss="row">
 					PROYECTOS ESTUDIO
 				</div>
