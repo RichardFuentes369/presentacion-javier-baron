@@ -113,19 +113,55 @@ let Project = {
 					PROYECTOS ESTUDIO
 				</div>
 				<div class="col-sm-6 mb-4" v-for="(estudio, index1) in model.estudios">
-					{{estudio}}
+					<div class="card" >
+					<div class="card-body">
+						<h5 class="card-title text-center">{{estudio.title}}</h5>
+						<p class="card-text"><b>Descripción:</b> {{estudio.descripcion}}</p>
+						<p class="card-text"><b>Lenguaje:</b>{{estudio.lenguaje}}</p>
+						<p class="card-text"><b>Estado:</b>{{estudio.status}}</p>
+						
+						<div class="col-sm-12">
+							<a href="#" class="btn btn-primary">Go GitHub</a>
+							<a href="#" class="btn btn-primary">Go Video</a>
+						</div>
+					</div>
+					</div>
 				</div>
 				<div calss="row">
 					PROYECTOS DE APRENDIZAJE 
 				</div>
 				<div class="col-sm-6 mb-4" v-for="(aprendizaje, index2) in model.aprendizajes">
-					{{aprendizaje}}
+					<div class="card" >
+					<div class="card-body">
+						<h5 class="card-title text-center">{{aprendizaje.title}}</h5>
+						<p class="card-text"><b>Descripción:</b> {{aprendizaje.descripcion}}</p>
+						<p class="card-text"><b>Lenguaje:</b>{{aprendizaje.lenguaje}}</p>
+						<p class="card-text"><b>Estado:</b>{{aprendizaje.status}}</p>
+
+						<div class="col-sm-12">
+							<a href="#" class="btn btn-primary">Go GitHub</a>
+							<a href="#" class="btn btn-primary">Go Video</a>
+						</div>
+					</div>
+					</div>
 				</div>
 				<div calss="row">
 					PROYECTOS TRABAJO Y/O PARTICIPACIÓN
 				</div>
 				<div class="col-sm-6 mb-4" v-for="(participando, index3) in model.participe">
-					{{participando}}
+					<div class="card" >
+					<div class="card-body">
+						<h5 class="card-title text-center">{{participando.title}}</h5>
+						<p class="card-text"><b>Descripción:</b> {{participando.descripcion}}</p>
+						<p class="card-text"><b>Lenguaje:</b>{{participando.lenguaje}}</p>
+						<p class="card-text"><b>Estado:</b>{{participando.status}}</p>
+
+						<div class="col-sm-12">
+							<a href="#" class="btn btn-primary">Go GitHub</a>
+							<a href="#" class="btn btn-primary">Go Video</a>
+						</div>
+					</div>
+					</div>
 				</div>
 			</div>
 		</div>
