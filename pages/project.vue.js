@@ -72,7 +72,7 @@ let Project = {
 					{
 						title: 'Sisconotas',
 						lenguaje: 'Laravel-php-javascript',
-						url: 'https://github.com/RichardFuentes369/restaurante',
+						url: 'https://github.com/RichardFuentes369/Sisconotas',
 						icono: '',
 						descripcion: 'Software web que muestra y registra la notas de los alumnos de x colegio del grado 0 al grado 5to',
 						video: '',
@@ -89,15 +89,6 @@ let Project = {
 					},
 				],
 				participe: [
-					{
-						title: 'Monedero',
-						lenguaje: 'Laravel-php-vue',
-						url: 'https://github.com/RichardFuentes369/Monedero',
-						icono: '',
-						descripcion: 'Software web que muestra los movimientos que se registran y van sumando o restando dependiendo de la opción',
-						video: '',
-						status: 'offline'
-					}
 				],
 			}
 		}
@@ -139,8 +130,10 @@ let Project = {
 						<p class="card-text"><b>Estado:</b>{{estudio.status}}</p>
 						
 						<div class="col-sm-12">
-							<a href="#" class="btn btn-primary">Go GitHub</a>
-							<a href="#" class="btn btn-primary">Go Video</a>
+							<a :href="estudio.url" class="btn btn-primary" target="_blank">Go GitHub</a>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								Go to Video
+							</button>
 						</div>
 					</div>
 					</div>
@@ -157,8 +150,10 @@ let Project = {
 						<p class="card-text"><b>Estado:</b>{{aprendizaje.status}}</p>
 
 						<div class="col-sm-12">
-							<a href="#" class="btn btn-primary">Go GitHub</a>
-							<a href="#" class="btn btn-primary">Go Video</a>
+							<a :href="aprendizaje.url" class="btn btn-primary" target="_blank">Go GitHub</a>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								Go to Video
+							</button>
 						</div>
 					</div>
 					</div>
@@ -175,9 +170,30 @@ let Project = {
 						<p class="card-text"><b>Estado:</b>{{participando.status}}</p>
 
 						<div class="col-sm-12">
-							<a href="#" class="btn btn-primary">Go GitHub</a>
-							<a href="#" class="btn btn-primary">Go Video</a>
+							<a :href="participando.url" class="btn btn-primary" target="_blank">Go GitHub</a>
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								Go to Video
+							</button>
 						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						...
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
 					</div>
 					</div>
 				</div>

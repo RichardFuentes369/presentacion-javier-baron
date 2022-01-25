@@ -10,12 +10,12 @@ let Resource = {
 						frameworks: [
 							{
 								name: 'Laravel',
-								icono: '../img/laravel.png',
+								icono: '../img/icons/laravel.png',
 								estado: ''
 							},
 							{
 								name: 'Codeigniter',
-								icono: '../img/codeigniter.png',
+								icono: '../img/icons/codeigniter.png',
 								estado: ''
 							}
 						]
@@ -26,17 +26,17 @@ let Resource = {
 						frameworks: [
 							{
 								name: 'JavaServer Faces',
-								icono: '../img/laravel.png',
+								icono: '../img/icons/laravel.png',
 								estado: ''
 							},
 							{
 								name: 'Hibernate',
-								icono: '../img/hibernate.svg',
+								icono: '../img/icons/hibernate.svg',
 								estado: ''
 							},
 							{
 								name: 'SpringFramework',
-								icono: '../img/spring.png',
+								icono: '../img/icons/spring.png',
 								estado: ''
 							}
 						]
@@ -47,7 +47,7 @@ let Resource = {
 						frameworks: [
 							{
 								name: 'Express',
-								icono: '../img/express.png',
+								icono: '../img/icons/express.png',
 								estado: ''
 							}
 						]
@@ -60,22 +60,22 @@ let Resource = {
 						frameworks: [
 							{
 								name: 'JQuery',
-								icono: '../img/jquery.png',
+								icono: '../img/icons/jquery.png',
 								estado: ''
 							},
 							{
 								name: 'Vue.js',
-								icono: '../img/vue.png',
+								icono: '../img/icons/vue.png',
 								estado: ''
 							},
 							{
 								name: 'Vue 2',
-								icono: '../img/vue.png',
+								icono: '../img/icons/vue.png',
 								estado: ''
 							},
 							{
 								name: 'Angular js',
-								icono: '../img/angular.svg',
+								icono: '../img/icons/angular.svg',
 								estado: ''
 							}
 						]
@@ -87,27 +87,27 @@ let Resource = {
 						frameworks: [
 							{
 								name: 'Element IO',
-								icono: '../img/laravel.png',
+								icono: '../img/icons/laravel.png',
 								estado: ''
 							},
 							{
 								name: 'Bootstrap',
-								icono: '../img/boostrap.png',
+								icono: '../img/icons/boostrap.png',
 								estado: ''
 							},
 							{
 								name: 'Bootstrap-Vue',
-								icono: '../img/boostrapvue.png',
+								icono: '../img/icons/boostrapvue.png',
 								estado: ''
 							},
 							{
 								name: 'FontAwesome',
-								icono: '../img/fontawesome.svg',
+								icono: '../img/icons/fontawesome.svg',
 								estado: ''
 							},
 							{
 								name: 'PrimeFaces',
-								icono: '../img/primefaces.png',
+								icono: '../img/icons/primefaces.png',
 								estado: ''
 							}
 						]
@@ -121,17 +121,17 @@ let Resource = {
 						db: [
 							{
 								name: 'MySql',
-								icono: '../img/mysql.png',
+								icono: '../img/icons/mysql.png',
 								estado: ''
 							},
 							{
 								name: 'PostgreSql',
-								icono: '../img/postgresql.svg',
+								icono: '../img/icons/postgresql.svg',
 								estado: ''
 							},
 							{
 								name: 'SqlServer',
-								icono: '../img/sqlserver.png',
+								icono: '../img/icons/sqlserver.png',
 								estado: ''
 							}
 						]
@@ -144,12 +144,12 @@ let Resource = {
 						lista: [
 							{
 								name: 'GitHub',
-								icono: '../img/github.png',
+								icono: '../img/icons/github.png',
 								estado: ''
 							},
 							{
 								name: 'GitLab',
-								icono: '../img/gitlab.svg',
+								icono: '../img/icons/gitlab.svg',
 								estado: ''
 							}
 						]
