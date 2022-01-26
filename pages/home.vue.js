@@ -2,7 +2,7 @@ let Home = Vue.component('Home', {
 	data: function () {
 		return {
 			model: {
-				title: 'Bienvenidos',
+				title: 'Bienvenidos xxx',
 				name: 'Javier Baron',
 				empleos: [
 					{
