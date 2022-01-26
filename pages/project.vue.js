@@ -131,9 +131,11 @@ let Project = {
 						
 						<div class="col-sm-12">
 							<a :href="estudio.url" class="btn btn-primary" target="_blank">Go GitHub</a>
+							<!--
 							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
 								Go to Video
 							</button>
+							-->
 						</div>
 					</div>
 					</div>
@@ -151,9 +153,11 @@ let Project = {
 
 						<div class="col-sm-12">
 							<a :href="aprendizaje.url" class="btn btn-primary" target="_blank">Go GitHub</a>
+							<!--
 							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
 								Go to Video
 							</button>
+							-->
 						</div>
 					</div>
 					</div>
@@ -171,9 +175,11 @@ let Project = {
 
 						<div class="col-sm-12">
 							<a :href="participando.url" class="btn btn-primary" target="_blank">Go GitHub</a>
+							<!--
 							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
 								Go to Video
 							</button>
+							-->
 						</div>
 					</div>
 					</div>

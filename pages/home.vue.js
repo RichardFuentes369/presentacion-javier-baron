@@ -4,6 +4,32 @@ let Home = Vue.component('Home', {
 			model: {
 				title: 'Bienvenidos',
 				name: 'Javier Baron',
+				empleos: [
+					{
+						tipo_empleo: 'Obra Labor',
+						empresa: 'SmartData & Automation',
+						tiempo: '8 meses',
+						lenguajes: 'Php - Codeigniter - Jquery - Ajax'
+					},
+					{
+						tipo_empleo: 'FreeLancer',
+						empresa: 'Frank Hufty',
+						tiempo: '12 meses',
+						lenguajes: 'Php - JavaScript - Css'
+					},
+					{
+						tipo_empleo: 'FreeLancer',
+						empresa: 'Diana Arnao',
+						tiempo: '4 meses',
+						lenguajes: 'Php - Laravel - JavaScript - Css'
+					},
+					{
+						tipo_empleo: 'OPS',
+						empresa: 'Grupo Bien Pensado GBP',
+						tiempo: '5 meses',
+						lenguajes: 'Php - Laravel - Vue - Axios'
+					}
+				]
 			}
 		}
 	},
@@ -46,7 +72,24 @@ let Home = Vue.component('Home', {
 				<div class="col-sm-6 mb-4">
 					<img src="../img/yo.jpg" alt="" class="img-thumbnail">
 				</div>
+
+				<hr />
+
+				<div class="row mt-4">
+					<h3 class="text-center">Empleos</h3>
+					<div class="linea-tiempo">
+						<div class="momento" v-for="(empleo, index) in model.empleos">
+							<div class="descripcion">
+								Tipo de empleo: {{empleo.tipo_empleo}} <br/>
+								Empresa/Cliente: {{empleo.empresa}} <br/>
+								Tiempo: {{empleo.tiempo}} <br/>
+								Lenguajes: {{empleo.lenguajes}} <br/>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
+
 		</div>
 	`,
 })
