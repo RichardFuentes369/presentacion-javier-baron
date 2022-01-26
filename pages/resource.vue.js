@@ -1,4 +1,4 @@
-let Resource = {
+let Resource = Vue.component('Resource', {
 	data: function () {
 		return {
 			model: {
@@ -241,4 +241,4 @@ let Resource = {
 			</div>
 		</div>
 	`,
-};
+});

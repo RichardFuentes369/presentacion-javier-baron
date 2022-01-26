@@ -1,4 +1,4 @@
-let Contact = { 
+let Contact = Vue.component('Contact', { 
 	data: function () {
 		return {
 			model: {
@@ -70,6 +70,6 @@ let Contact = {
 			</div>
 		</div>
 	`,
-};
+});
 
 //<div></div>

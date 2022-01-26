@@ -1,4 +1,4 @@
-let Project = {
+let Project = Vue.component('Project', {
 	data: function () {
 		return {
 			model: {
@@ -206,4 +206,4 @@ let Project = {
 			</div>
 		</div>
 	`,
-};
+});
