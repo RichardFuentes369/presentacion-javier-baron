@@ -14,46 +14,60 @@
 </head>
 
 <body>
-
-    <div id="app" >
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <div id="app">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-primary" style="background-color: #e3f2fd;">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li>
                             <router-link class="nav-link" to="/"> Home </router-link>
                         </li>
                         <li>
-                            <router-link class="nav-link" to="project"> Project </router-link>
+                            <router-link class="nav-link" to="project"> Proyectos </router-link>
                         </li>
                         <li>
-                            <router-link class="nav-link" to="resource"> Recources </router-link>
+                            <router-link class="nav-link" to="resource"> Recursos </router-link>
                         </li>
                         <li>
-                            <router-link class="nav-link" to="contact"> Contact </router-link>
+                            <router-link class="nav-link" to="contact"> Contacto </router-link>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <div class="container p-0">
+        <div class="mx-3 p-0">
             <router-view></router-view>
         </div>
 
         <div class="fixed-bottom">
-            <div class="col-sm-12">
-                <div class="row">
-                    facebook
-                    github
-                    linkedin
+            <div class="navbar justify-content-center navbar-light" style="background-color: #e3f2fd;">
+                <div class="col-sm-12 row">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com/richard.fuentes.369/"  target="_blank">
+                                <img src="../img/redes/facebook.png" style="height: 1rem; width: 1rem;" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://api.whatsapp.com/send?phone=573504284093"  target="_blank">
+                                <img src="../img/redes/whatsapp.png" style="height: 1rem; width: 1rem;" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.linkedin.com/in/javierbaronf/"  target="_blank">
+                                <img src="../img/redes/linkedin.png" style="height: 1rem; width: 1rem;" alt="">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="row">
-                    correo
-                    todos los derechos reservados
+                    &#169; 2022 Javier Ricardo Baron Fuentes
                 </div>
             </div>
         </div>
@@ -83,6 +97,3 @@
 </body>
 
 </html>
-
-
-

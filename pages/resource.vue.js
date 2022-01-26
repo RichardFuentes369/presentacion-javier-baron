@@ -172,7 +172,7 @@ let Resource = Vue.component('Resource', {
 		}
 	},
 	template: `
-		<div>
+		<div class="card mt-3" style="background-color: #C6C8C5">
 			<div class="row text-center mt-4">
 				<h3>{{model.title}}<h3>
 			</div>
@@ -182,9 +182,9 @@ let Resource = Vue.component('Resource', {
 				</div>
 			</div>
 			
-			<div class="col-sm-12 row" id="contenido">
+			<div class="col-sm-12 mx-auto row" id="contenido">
 				<div calss="row">
-					Lenguajes Backend
+					<h5>Lenguajes Backend</h5>
 				</div>
 				<div class="col-sm-4 mb-4" v-for="(lbackend, index3) in model.backend">
 					<div class="card" >
@@ -198,7 +198,7 @@ let Resource = Vue.component('Resource', {
 					</div>
 				</div>
 				<div calss="row">
-					Lenguajes Frontend
+					<h5>Lenguajes Frontend</h5>
 				</div>
 				<div class="col-sm-4 mb-4" v-for="(lfronted, index1) in model.fronted">
 					<div class="card" >
@@ -212,7 +212,7 @@ let Resource = Vue.component('Resource', {
 					</div>
 				</div>
 				<div calss="row">
-					Bases de datos
+					<h5>Bases de datos</h5>
 				</div>
 				<div class="col-sm-4 mb-4" v-for="(database, index5) in model.bd">
 					<div class="card" >
@@ -226,7 +226,7 @@ let Resource = Vue.component('Resource', {
 					</div>
 				</div>
 				<div calss="row">
-					Versionadores de codigo
+					<h5>Versionadores de codigo</h5>
 				</div>
 				<div class="col-sm-4 mb-4" v-for="(version, index7) in model.versionadores">
 					<div class="card" >

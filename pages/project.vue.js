@@ -107,7 +107,7 @@ let Project = Vue.component('Project', {
 		}
 	},
 	template: `
-		<div>
+		<div class="card mt-3" style="background-color: #C6C8C5">
 			<div class="row text-center mt-4">
 				<h3>{{model.title}}<h3>
 			</div>
@@ -117,31 +117,9 @@ let Project = Vue.component('Project', {
 				</div>
 			</div>
 			
-			<div class="col-sm-12 row" id="contenido">
+			<div class="col-sm-12 mx-auto row " id="contenido">
 				<div calss="row">
-					PROYECTOS ESTUDIO
-				</div>
-				<div class="col-sm-6 mb-4" v-for="(estudio, index1) in model.estudios">
-					<div class="card" >
-					<div class="card-body">
-						<h5 class="card-title text-center">{{estudio.title}}</h5>
-						<p class="card-text"><b>Descripción:</b> {{estudio.descripcion}}</p>
-						<p class="card-text"><b>Lenguaje:</b>{{estudio.lenguaje}}</p>
-						<p class="card-text"><b>Estado:</b>{{estudio.status}}</p>
-						
-						<div class="col-sm-12">
-							<a :href="estudio.url" class="btn btn-primary" target="_blank">Go GitHub</a>
-							<!--
-							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-								Go to Video
-							</button>
-							-->
-						</div>
-					</div>
-					</div>
-				</div>
-				<div calss="row">
-					PROYECTOS DE APRENDIZAJE 
+					<h5>PROYECTOS DE APRENDIZAJE</h5>
 				</div>
 				<div class="col-sm-6 mb-4" v-for="(aprendizaje, index2) in model.aprendizajes">
 					<div class="card" >
@@ -163,7 +141,29 @@ let Project = Vue.component('Project', {
 					</div>
 				</div>
 				<div calss="row">
-					PROYECTOS TRABAJO Y/O PARTICIPACIÓN
+					<h5>PROYECTOS ESTUDIO</h5>
+				</div>
+				<div class="col-sm-6 mb-4" v-for="(estudio, index1) in model.estudios">
+					<div class="card" >
+					<div class="card-body">
+						<h5 class="card-title text-center">{{estudio.title}}</h5>
+						<p class="card-text"><b>Descripción:</b> {{estudio.descripcion}}</p>
+						<p class="card-text"><b>Lenguaje:</b>{{estudio.lenguaje}}</p>
+						<p class="card-text"><b>Estado:</b>{{estudio.status}}</p>
+						
+						<div class="col-sm-12">
+							<a :href="estudio.url" class="btn btn-primary" target="_blank">Go GitHub</a>
+							<!--
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+								Go to Video
+							</button>
+							-->
+						</div>
+					</div>
+					</div>
+				</div>
+				<div calss="row">
+					<h5>PROYECTOS TRABAJO Y/O PARTICIPACIÓN</h5>
 				</div>
 				<div class="col-sm-6 mb-4" v-for="(participando, index3) in model.participe">
 					<div class="card" >

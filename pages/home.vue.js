@@ -47,7 +47,7 @@ let Home = Vue.component('Home', {
 		}
 	},
 	template: `
-		<div>
+		<div class="card mt-3" style="background-color: #C6C8C5">
 			<div class="row text-center mt-4">
 				<h3>{{model.title}}<h3>
 			</div>
@@ -57,7 +57,7 @@ let Home = Vue.component('Home', {
 				</div>
 			</div>
 			
-			<div class="col-sm-12 row" id="contenido">
+			<div class="col-sm-12 mx-auto row" id="contenido">
 				<div class="col-sm-6 mb-4 justificado-izquierda">
 					Mi nombre es Javier Ricardo Baron Fuentes, nací el 1 de Junio del año 1996 y en la actualidad tengo 25 años. <br><br>
 
@@ -77,7 +77,7 @@ let Home = Vue.component('Home', {
 
 				<div class="row mt-4">
 					<h3 class="text-center">Empleos</h3>
-					<div class="linea-tiempo">
+					<div class="linea-tiempo m-4">
 						<div class="momento" v-for="(empleo, index) in model.empleos">
 							<div class="descripcion">
 								Tipo de empleo: {{empleo.tipo_empleo}} <br/>

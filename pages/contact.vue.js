@@ -7,7 +7,7 @@ let Contact = Vue.component('Contact', {
 				redes: [
 					{
 						title: 'Facebook',
-						url: 'https://github.com/RichardFuentes369/NodeTypeOrmBase',
+						url: 'https://www.facebook.com/richard.fuentes.369/',
 						icono: '../img/redes/facebook.png',
 					},
 					{
@@ -43,7 +43,7 @@ let Contact = Vue.component('Contact', {
 		}
 	},
 	template: `
-		<div>
+		<div class="card mt-3" style="background-color: #C6C8C5">
 			<div class="row text-center mt-4">
 				<h3>{{model.title}}<h3>
 			</div>
@@ -53,7 +53,7 @@ let Contact = Vue.component('Contact', {
 				</div>
 			</div>
 			
-			<div class="col-sm-12 row" id="contenido">
+			<div class="col-sm-12 mx-auto row" id="contenido">
 				<div class="col-sm-6 mb-4" v-for="(red, index1) in model.redes">
 					<div class="card" >
 						<div class="card-body">
