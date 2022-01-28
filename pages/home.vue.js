@@ -69,8 +69,8 @@ let Home = Vue.component('Home', {
 					
 					Actualmente me encuentro aprendiendo mas sobre estas tecnologias para mejorar e ir avanzando en mi formación y asi poder ofrecer un servicio optimo.
 				</div>
-				<div class="col-sm-6 mb-4">
-					<img src="../img/yo.jpg" alt="" class="img-thumbnail">
+				<div class="col-sm-6 mb-4 text-center">
+					<img src="../img/me.jpg" alt="" class="img-thumbnail photo-presentacion">
 				</div>
 
 				<hr />

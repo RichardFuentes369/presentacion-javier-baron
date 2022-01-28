@@ -22,7 +22,7 @@ let Contact = Vue.component('Contact', {
 					},
 					{
 						title: 'CV',
-						url: 'https://github.com/RichardFuentes369/NodeTypeOrmBase',
+						url: 'https://drive.google.com/file/d/1bWadMeJ0KwnwS1hv01F0NkyAKKMGgHSG/view',
 						icono: '../img/redes/cv.png',
 					},
 				],
