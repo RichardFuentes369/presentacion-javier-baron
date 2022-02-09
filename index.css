@@ -1,13 +1,13 @@
-.justificado-izquierda{
+.justificado-izquierda {
     text-align: left;
 }
 
 .preloaderPadre {
-  height: 150px;
-  /*IMPORTANTE*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 150px;
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .preloaderHijo {
@@ -19,18 +19,107 @@
     animation-name: girar;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-  }
-  @keyframes girar {
+}
+
+@keyframes girar {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}
 
-  .photo-presentacion {
+.photo-presentacion {
     border-radius: 50rem;
     height: 20rem!important;
     width: 20rem!important;
-  }
+}
+
+
+/*Boton*/
+
+.contenedor {
+    width: 90px;
+    height: 300px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.botonF1,
+.botonFHELP {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #F44336;
+    right: 0;
+    bottom: 4rem!important;
+    position: fixed;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-size: 36px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: .3s;
+    z-index: 1030;
+}
+
+span {
+    transition: .5s;
+}
+
+.botonF1:hover span {
+    transform: rotate(360deg);
+}
+
+.botonF1:active {
+    transform: scale(1.1);
+}
+
+.btnOpc {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    color: #FFF;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    font-size: 28px;
+    outline: none;
+    position: fixed;
+    margin-right: 26px;
+    transform: scale(0);
+    right: 0;
+    bottom: 4rem!important;
+    z-index: 1030;
+}
+
+.botonF2 {
+    background: #faf9fc;
+    margin-bottom: 85px;
+    transition: 0.5s;
+}
+
+.botonF3 {
+    background: #f6f8f8;
+    margin-bottom: 130px;
+    transition: 0.7s;
+}
+
+.botonF4 {
+    background: #f6f8f8;
+    margin-bottom: 175px;
+    transition: 0.9s;
+}
+
+.botonF5 {
+    background: #f6f8f8;
+    margin-bottom: 220px;
+    transition: 0.99s;
+}
+
+.animacionVer {
+    transform: scale(1);
+}

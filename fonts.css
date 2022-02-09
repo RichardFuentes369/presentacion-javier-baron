@@ -1,0 +1,28 @@
+.font-title {
+    font-family: 'Rowdies', cursive;
+    color: blue;
+}
+
+.card {
+    box-shadow: 7px 7px 15px #592A08; 
+}
+
+.font-subtitle {
+    font-family: 'Merienda', cursive;
+    color: rgb(163, 33, 33);
+    text-decoration: underline solid red 2%;   
+    text-decoration-style: wavy;
+}
+
+.font-subtitle2 {
+    font-family: 'Merienda', cursive;
+    color: rgb(163, 33, 33);
+}
+
+.line {
+    text-decoration-line: underline;
+}
+
+.font-body {
+    font-family: 'Cormorant', sans-serif;
+}

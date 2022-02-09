@@ -6,29 +6,29 @@ let Home = Vue.component('Home', {
 				name: 'Javier Baron',
 				empleos: [
 					{
-						tipo_empleo: 'Obra Labor',
 						empresa: 'SmartData & Automation',
-						tiempo: '8 meses',
-						lenguajes: 'Php - Codeigniter - Jquery - Ajax'
+						tiempo: '11/11/2020 - 30/06/2021',
+						lenguajes: 'Php - Codeigniter - Jquery - Ajax',
+						activities: ''
 					},
 					{
-						tipo_empleo: 'FreeLancer',
-						empresa: 'Frank Hufty',
-						tiempo: '12 meses',
-						lenguajes: 'Php - JavaScript - Css'
+						empresa: 'La Turena',
+						tiempo: '14/05/2020 - 30/07/2020',
+						lenguajes: 'Java - Php - Laravel - JavaScript - Css',
+						activities: ''
 					},
 					{
-						tipo_empleo: 'FreeLancer',
-						empresa: 'Diana Arnao',
-						tiempo: '4 meses',
-						lenguajes: 'Php - Laravel - JavaScript - Css'
+						empresa: 'Freelancer',
+						tiempo: '13/02/2020 - 30/04/2021',
+						lenguajes: 'JavaScript - Css - Consumo de apis',
+						activities: ''
 					},
 					{
-						tipo_empleo: 'OPS',
-						empresa: 'Grupo Bien Pensado GBP',
-						tiempo: '5 meses',
-						lenguajes: 'Php - Laravel - Vue - Axios'
-					}
+						empresa: 'Grupo Bien Pensado (GBP)',
+						tiempo: '02/03/2019 - 30/07/2019 ',
+						lenguajes: 'Php - Laravel - Vue - Axios',
+						activities: ''
+					},
 				]
 			}
 		}
@@ -47,9 +47,13 @@ let Home = Vue.component('Home', {
 		}
 	},
 	template: `
-		<div class="card mt-3" style="background-color: #C6C8C5">
-			<div class="row text-center mt-4">
-				<h3>{{model.title}}<h3>
+		<div class="mt-3">
+			<div class="text-center mt-4 col-sm-12 row">
+				<div class="col-sm"></div>
+				<div class="col-sm box-title">
+					<h3 class="font-title">{{model.title}}</h3>
+				</div>
+				<div class="col-sm"></div>
 			</div>
 			
 			<div class="preloaderPadre" id="cargando">
@@ -58,7 +62,7 @@ let Home = Vue.component('Home', {
 			</div>
 			
 			<div class="col-sm-12 mx-auto row" id="contenido">
-				<div class="col-sm-6 mb-4 justificado-izquierda">
+				<div class="col-sm-6 mb-4 justificado-izquierda font-body">
 					Mi nombre es Javier Ricardo Baron Fuentes, nací el 1 de Junio del año 1996 y en la actualidad tengo 25 años. <br><br>
 
 					Soy egresado de las Unidades Tecnologicas de Santander (UTS), seccional bucaramanga. Institución en la cual curse una Tecnología en Desarrollo de Sistemas Informaticos y de la cual 
@@ -75,14 +79,13 @@ let Home = Vue.component('Home', {
 
 				<hr />
 
-				<div class="row mt-4">
-					<h3 class="text-center">Empleos</h3>
+				<div class="row mt-4 justify-content-center">
+					<h3 class="text-center font-subtitle2">Empleos</h3>
 					<div class="linea-tiempo m-4">
 						<div class="momento" v-for="(empleo, index) in model.empleos">
 							<div class="descripcion">
-								Tipo de empleo: {{empleo.tipo_empleo}} <br/>
-								Empresa/Cliente: {{empleo.empresa}} <br/>
-								Tiempo: {{empleo.tiempo}} <br/>
+								Empresa - Cliente: {{empleo.empresa}} <br/>
+								Período: {{empleo.tiempo}} <br/>
 								Lenguajes: {{empleo.lenguajes}} <br/>
 							</div>
 						</div>
@@ -93,4 +96,3 @@ let Home = Vue.component('Home', {
 		</div>
 	`,
 })
-
