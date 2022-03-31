@@ -36,16 +36,8 @@ let Project = Vue.component('Project', {
                         lenguaje: 'Laravel-php-vue',
                         url: 'https://github.com/RichardFuentes369/Monedero',
                         icono: '',
-                        descripcion: 'Software web que muestra los movimientos que se registran y van sumando o restando dependiendo de la opción',
-                        video: '',
-                        status: 'Finalizado'
-                    },
-                    {
-                        title: 'Restaurante',
-                        lenguaje: 'Laravel-php-vue',
-                        url: 'https://github.com/RichardFuentes369/restaurante',
-                        icono: '',
-                        descripcion: 'Software web que muestra los menus de los restaurantes y a su vez factura mediante una orden de un mesero',
+                        type: 'Aplicativo Web',
+                        descripcion: 'Software encargado de gestionar los ingresos y gastos de cualquier persona que lo use. Este se debe alimentar manualmente.',
                         video: '',
                         status: 'Finalizado'
                     },
@@ -54,16 +46,38 @@ let Project = Vue.component('Project', {
                         lenguaje: 'Laravel-php-vue',
                         url: 'https://github.com/RichardFuentes369/Inventario',
                         icono: '',
-                        descripcion: 'Software web que muestra el inventario con stock de mis productos',
+                        type: 'Aplicativo Web',
+                        descripcion: 'Software encargado de llevar un inventario de productos',
                         video: '',
                         status: 'Finalizado'
+                    },
+                    {
+                        title: 'Restaurante',
+                        lenguaje: 'Laravel-php-vue',
+                        url: 'https://github.com/RichardFuentes369/restaurante',
+                        icono: '',
+                        type: 'Aplicativo Web',
+                        descripcion: 'Software encargado de administrar los precios, platos, menus y recaudacion de dinero del negocio',
+                        video: '',
+                        status: 'Finalizado'
+                    },
+                    {
+                        title: 'Restaurante App',
+                        lenguaje: 'Expo, react-native, android',
+                        url: 'https://github.com/RichardFuentes369/turnero-prueba-offimedicas',
+                        icono: '',
+                        type: 'Aplicativo Movil',
+                        descripcion: 'Software encargado de hacer pedidos al software Restaurante para facilitar al mesero el mismo',
+                        video: '',
+                        status: 'En desarrollo'
                     },
                     {
                         title: 'Valet-parking',
                         lenguaje: 'Laravel-php-vue',
                         url: 'https://github.com/RichardFuentes369/valetParking',
                         icono: '',
-                        descripcion: 'Software web que muestra los y registra el movimiento de un parqueadero de vehiculos y a su vez factura dependiendo del tipo de vehivulo, moto o carro y la fraccion de la hora, dia, semana,mes',
+                        type: 'Aplicativo Web',
+                        descripcion: 'Software encargado de registra el movimiento de un parqueadero de vehiculos y a su vez facturar dependiendo del tipo de vehivulo, moto o carro y la fraccion de la hora, dia, semana,mes',
                         video: '',
                         status: 'Finalizado'
                     },
@@ -72,7 +86,8 @@ let Project = Vue.component('Project', {
                         lenguaje: 'Laravel-php-javascript',
                         url: 'https://github.com/RichardFuentes369/Sisconotas',
                         icono: '',
-                        descripcion: 'Software web que muestra y registra la notas de los alumnos de x colegio del grado 0 al grado 5to',
+                        type: 'Aplicativo Web',
+                        descripcion: 'Software encargado de registrar la notas de los alumnos de x colegio del grado 0 al grado 5to',
                         video: '',
                         status: 'Finalizado'
                     },
@@ -81,6 +96,7 @@ let Project = Vue.component('Project', {
                         lenguaje: 'JavaEE',
                         url: 'https://github.com/RichardFuentes369/ProyectoGrado',
                         icono: '',
+                        type: 'Aplicativo Web',
                         descripcion: 'Software web para registrar la trazabilidad de la mora en Santander',
                         video: '',
                         status: 'Finalizado'
@@ -90,27 +106,20 @@ let Project = Vue.component('Project', {
                         lenguaje: 'Laravel-php-jquery-socket',
                         url: 'https://github.com/RichardFuentes369/chatLaravel',
                         icono: '',
-                        descripcion: 'Software web para la comunicación de personal interno',
+                        type: 'Aplicativo Web',
+                        descripcion: 'Software web para la comunicación de personal interno de una empresa o negocio',
                         video: '',
                         status: 'Finalizado'
                     },
                     {
-                        title: 'Control de atencion',
+                        title: 'Sistema de Turnos',
                         lenguaje: 'Laravel-php-jquery-socket',
                         url: 'https://github.com/RichardFuentes369/turnero-prueba-offimedicas',
                         icono: '',
-                        descripcion: 'Software web para el control de atencion a usuarios',
+                        type: 'Aplicativo Web',
+                        descripcion: 'Software web para el control de atencion a usuarios por medio de turnos',
                         video: '',
                         status: 'Finalizado'
-                    },
-                    {
-                        title: 'Aplicacion movil para el control de pedidos del software restaurante app',
-                        lenguaje: 'Expo, react-native, android',
-                        url: 'https://github.com/RichardFuentes369/turnero-prueba-offimedicas',
-                        icono: '',
-                        descripcion: 'Este aplicativo se comunica con el restaurante app para la toma de pedidos del mismo',
-                        video: '',
-                        status: 'En desarrollo'
                     },
                 ],
                 participe: [],
@@ -158,6 +167,7 @@ let Project = Vue.component('Project', {
 								<p class="card-text"><b>Descripción:</b> {{propios.descripcion}}</p>
 								<p class="card-text"><b>Lenguaje:</b>{{propios.lenguaje}}</p>
 								<p class="card-text"><b>Estado:</b>{{propios.status}}</p>
+								<p class="card-text"><b>Tipo:</b>{{propios.type}}</p>
 
 								<div class="col-sm-12">
                                     <!--
