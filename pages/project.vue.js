@@ -31,14 +31,14 @@ let Project = Vue.component('Project', {
                         status: 'offline'
                     },
                 ],
-                aprendizajes: [{
+                propios: [{
                         title: 'Monedero',
                         lenguaje: 'Laravel-php-vue',
                         url: 'https://github.com/RichardFuentes369/Monedero',
                         icono: '',
                         descripcion: 'Software web que muestra los movimientos que se registran y van sumando o restando dependiendo de la opción',
                         video: '',
-                        status: 'offline'
+                        status: 'Finalizado'
                     },
                     {
                         title: 'Restaurante',
@@ -47,7 +47,7 @@ let Project = Vue.component('Project', {
                         icono: '',
                         descripcion: 'Software web que muestra los menus de los restaurantes y a su vez factura mediante una orden de un mesero',
                         video: '',
-                        status: 'offline'
+                        status: 'Finalizado'
                     },
                     {
                         title: 'Inventario',
@@ -56,7 +56,7 @@ let Project = Vue.component('Project', {
                         icono: '',
                         descripcion: 'Software web que muestra el inventario con stock de mis productos',
                         video: '',
-                        status: 'offline'
+                        status: 'Finalizado'
                     },
                     {
                         title: 'Valet-parking',
@@ -65,7 +65,7 @@ let Project = Vue.component('Project', {
                         icono: '',
                         descripcion: 'Software web que muestra los y registra el movimiento de un parqueadero de vehiculos y a su vez factura dependiendo del tipo de vehivulo, moto o carro y la fraccion de la hora, dia, semana,mes',
                         video: '',
-                        status: 'offline'
+                        status: 'Finalizado'
                     },
                     {
                         title: 'Sisconotas',
@@ -74,7 +74,7 @@ let Project = Vue.component('Project', {
                         icono: '',
                         descripcion: 'Software web que muestra y registra la notas de los alumnos de x colegio del grado 0 al grado 5to',
                         video: '',
-                        status: 'offline'
+                        status: 'Finalizado'
                     },
                     {
                         title: 'ProyectoGrado',
@@ -83,7 +83,34 @@ let Project = Vue.component('Project', {
                         icono: '',
                         descripcion: 'Software web para registrar la trazabilidad de la mora en Santander',
                         video: '',
-                        status: 'offline'
+                        status: 'Finalizado'
+                    },
+                    {
+                        title: 'ChatInterno Web-App',
+                        lenguaje: 'Laravel-php-jquery-socket',
+                        url: 'https://github.com/RichardFuentes369/chatLaravel',
+                        icono: '',
+                        descripcion: 'Software web para la comunicación de personal interno',
+                        video: '',
+                        status: 'Finalizado'
+                    },
+                    {
+                        title: 'Control de atencion',
+                        lenguaje: 'Laravel-php-jquery-socket',
+                        url: 'https://github.com/RichardFuentes369/turnero-prueba-offimedicas',
+                        icono: '',
+                        descripcion: 'Software web para el control de atencion a usuarios',
+                        video: '',
+                        status: 'Finalizado'
+                    },
+                    {
+                        title: 'Aplicacion movil para el control de pedidos del software restaurante app',
+                        lenguaje: 'Expo, react-native, android',
+                        url: 'https://github.com/RichardFuentes369/turnero-prueba-offimedicas',
+                        icono: '',
+                        descripcion: 'Este aplicativo se comunica con el restaurante app para la toma de pedidos del mismo',
+                        video: '',
+                        status: 'En desarrollo'
                     },
                 ],
                 participe: [],
@@ -107,7 +134,7 @@ let Project = Vue.component('Project', {
 		<div class="mt-3">
 			<div class="text-center mt-4 col-sm-12 row">
 				<h3 class="font-title">{{model.title}}</h3>
-			</div>
+            </div>
 
 			<div class="preloaderPadre" id="cargando">
 				<div class="preloaderHijo">
@@ -117,22 +144,24 @@ let Project = Vue.component('Project', {
 			<div class="col-sm-12 mx-auto row " id="contenido">
 				<div class="mt-4 col-sm-12 row mb-2">
 					<div class="d-inline-flex p-2 bd-highlight">
-						<h3 class="font-subtitle">Aprendizaje</h3>
+						<h3 class="font-subtitle">Propios</h3>
 					</div>
 				</div>
 
+                <p>Nota: Para ver en funcionamiento cualquier proyecto que aquí se menciona. Puede contactarme y con gusto le atendere</p>
+
 				<div class="container row p-5 py-2">
-					<div class="col-sm-6 mb-4" v-for="(aprendizaje, index2) in model.aprendizajes">
+					<div class="col-sm-6 mb-4" v-for="(propios, index2) in model.propios">
 						<div class="card" style="height: 100%!important">
 							<div class="card-body">
-								<h5 class="card-title text-center">{{aprendizaje.title}}</h5>
-								<p class="card-text"><b>Descripción:</b> {{aprendizaje.descripcion}}</p>
-								<p class="card-text"><b>Lenguaje:</b>{{aprendizaje.lenguaje}}</p>
-								<p class="card-text"><b>Estado:</b>{{aprendizaje.status}}</p>
+								<h5 class="card-title text-center">{{propios.title}}</h5>
+								<p class="card-text"><b>Descripción:</b> {{propios.descripcion}}</p>
+								<p class="card-text"><b>Lenguaje:</b>{{propios.lenguaje}}</p>
+								<p class="card-text"><b>Estado:</b>{{propios.status}}</p>
 
 								<div class="col-sm-12">
-									<a :href="aprendizaje.url" class="btn btn-primary" target="_blank">Go GitHub</a>
-									<!--
+                                    <!--
+									<a :href="propios.url" class="btn btn-primary" target="_blank">Go GitHub</a>
 									<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
 										Go to Video
 									</button>
@@ -143,6 +172,7 @@ let Project = Vue.component('Project', {
 					</div>
 				</div>
 
+                <!--
 				<div class="mt-4 col-sm-12 row mb-2">
 					<div class="d-inline-flex p-2 bd-highlight">
 						<h3 class="font-subtitle">Estudio</h3>
@@ -158,8 +188,8 @@ let Project = Vue.component('Project', {
 								<p class="card-text"><b>Estado:</b>{{estudio.status}}</p>
 								
 								<div class="col-sm-12">
-									<a :href="estudio.url" class="btn btn-primary" target="_blank">Go GitHub</a>
-									<!--
+                                <!--
+                                    <a :href="estudio.url" class="btn btn-primary" target="_blank">Go GitHub</a>
 									<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
 										Go to Video
 									</button>
@@ -169,6 +199,7 @@ let Project = Vue.component('Project', {
 						</div>
 					</div>
 				</div>
+                -->
 
 				<div class="mt-4 col-sm-12 row mb-2" style="display: none">
 					<div class="d-inline-flex p-2 bd-highlight">
