@@ -21,7 +21,7 @@ let Contact = Vue.component('Contact', {
                     },
                     {
                         title: 'CV',
-                        url: 'https://drive.google.com/file/d/1bWadMeJ0KwnwS1hv01F0NkyAKKMGgHSG/view',
+                        url: 'https://drive.google.com/file/d/1vVMWMiH3fb8ze6_CahaoiBZsvIZ_3QOl/view',
                         icono: '../img/redes/cv.png',
                     },
                 ],
