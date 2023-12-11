@@ -4,17 +4,18 @@ let Home = Vue.component('Home', {
 			model: {
 				title: 'Bienvenidos',
 				name: 'Javier Baron',
+				edad: '',
 				empleos: [
+					{
+						empresa: 'Nexura internacional',
+						tiempo: '05/07/2022 - 30/11/2023',
+						lenguajes: 'Php - Larave - Jquery - Ajax',
+						activities: ''
+					},
 					{
 						empresa: 'SmartData & Automation',
 						tiempo: '11/11/2020 - 30/06/2021',
 						lenguajes: 'Php - Codeigniter - Jquery - Ajax',
-						activities: ''
-					},
-					{
-						empresa: 'La Turena',
-						tiempo: '14/05/2020 - 30/07/2020',
-						lenguajes: 'Java - Php - Laravel - JavaScript - Css',
 						activities: ''
 					},
 					{
@@ -35,6 +36,7 @@ let Home = Vue.component('Home', {
 	},
 	mounted(){
 		this.cargando()
+		this.edad()
 	},
 	methods: {
 		cargando(){
@@ -44,6 +46,11 @@ let Home = Vue.component('Home', {
 				window.document.getElementById('cargando').style.display = "none"
 				window.document.getElementById('contenido').style.display = ""
 			}, 600)
+		},
+		edad(){
+			let anhoNacimiento = 1996
+			let fechaActual = new Date();
+            this.model.edad = fechaActual.getFullYear()- anhoNacimiento;
 		}
 	},
 	template: `
@@ -62,37 +69,52 @@ let Home = Vue.component('Home', {
 			</div>
 			
 			<div class="col-sm-12 mx-auto row" id="contenido">
-				<div class="col-sm-6 mb-4 justificado-izquierda font-body">
-					Mi nombre es Javier Ricardo Baron Fuentes, nací el 1 de Junio del año 1996 y en la actualidad tengo 25 años. <br><br>
+				<div class="card mb-4" style="background-color:#f3f3f3">
+					<div class="card-body">
+						<div class="text-center mb-4">
+							<img src="../img/me.jpg" alt="" class="img-thumbnail photo-presentacion">
+						</div>
+						<div class="col-sm-12 mb-4 justificado-izquierda font-body">
+							<p>
+							Mi nombre es Javier Ricardo Baron Fuentes y en la actualidad tengo {{this.model.edad}} años. <br><br>
+							</p>
+							<p>	
+							Soy egresado de las Unidades Tecnologicas de Santander (UTS), seccional Bucaramanga. 
+							Institución en la cual curse y me gradue de la Tecnología en Desarrollo de Sistemas Informaticos (2015-2019). 
+							Actualmente me encuentro estudiando la Ingenieria de Sistemas en la misma universidad (2024). 
+							</p>
+							<p>
+							Desde el 2019 y hasta la actualidad me e venido enfocandome en el estudio de nuevas tecnologias las cuales
+							me han permitido hacerme un corto camino en la industria logrando sacar varios proyectos adelante. Entre ellos estan
+							proyectos de recolección de datos, analisis de procesos, agendamiento de citas, flujos de chatbots, almacenamineto en lotes,
+							generacion de reportes y creaci&oacute;n de modulos personalizados para agencias privadas.
+							</p>
+							<p>
+							Entre las tecnologias que e trabajado se encuentran Java, JSF, JPA, Php, Laravel, Codeigniter, Node, Nest, Angular, Vue y JQuery.
+							Tambien e usado librerias como lo son FullCalendar, Moment, SweetAlert entre otras las cuales me han ayudado a realizar los procesos que los clientes necesitan.
+							</p>
+							<p>
+							Me considero una persona honesta, responsable y comprometida con cada reto que se me ponga. 
+							</p>
+						</div>
 
-					Soy egresado de las Unidades Tecnologicas de Santander (UTS), seccional bucaramanga. Institución en la cual curse una Tecnología en Desarrollo de Sistemas Informaticos y de la cual 
-					me gradue en el año 2019.
-					Desde ahí y hasta la actualidad me e venido enfocandome en el analisis, desarrollo y montaje de sistemas informaticos para la web usando lenguajes de programación para el backend 
-					como PHP (Laravel - Codeigniter), Node (Express, TypeOrm), Java (JPA, JSP, MAVEN, JEE) y asi mismo usando JavaScript Bibliotecas(JQuery, Axios, AJAX, SweetAlert) 
-					y JavaScript Frameworks(Vue, vue.js, angular.js) para darle dinamismo a las paginas. <br><br>
-					
-					Actualmente me encuentro aprendiendo mas sobre estas tecnologias para mejorar e ir avanzando en mi formación y asi poder ofrecer un servicio optimo.
-				</div>
-				<div class="col-sm-6 mb-4 text-center">
-					<img src="../img/me.jpg" alt="" class="img-thumbnail photo-presentacion">
-				</div>
+						<hr />
 
-				<hr />
-
-				<div class="row mt-4 justify-content-center">
-					<h3 class="text-center font-subtitle2">Empleos</h3>
-					<div class="linea-tiempo m-4">
-						<div class="momento" v-for="(empleo, index) in model.empleos">
-							<div class="descripcion">
-								Empresa - Cliente: {{empleo.empresa}} <br/>
-								Período: {{empleo.tiempo}} <br/>
-								Lenguajes: {{empleo.lenguajes}} <br/>
+						<div class="row mt-4 justify-content-center">
+							<h3 class="text-center font-subtitle2">Empleos</h3>
+							<div class="linea-tiempo m-4">
+								<div class="momento" v-for="(empleo, index) in model.empleos">
+									<div class="descripcion">
+										Empresa - Cliente: {{empleo.empresa}} <br/>
+										Período: {{empleo.tiempo}} <br/>
+										Lenguajes: {{empleo.lenguajes}} <br/>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
 	`,
 })

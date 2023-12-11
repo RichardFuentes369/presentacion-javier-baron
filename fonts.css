@@ -8,9 +8,9 @@
 }
 
 .font-subtitle {
-    font-family: 'Merienda', cursive;
+    /*font-family: 'Merienda', cursive;*/
     color: rgb(163, 33, 33);
-    text-decoration: underline solid red 2%;   
+    /*text-decoration: underline solid red 2%;*/
     text-decoration-style: wavy;
 }
 

@@ -177,95 +177,99 @@ let Resource = Vue.component('Resource', {
 			</div>
 			
 			<div class="col-sm-12 mx-auto row" id="contenido">
-				<div class="mt-4 col-sm-12 row mb-2">
-					<div class="d-inline-flex p-2 bd-highlight">
-						<h3 class="font-subtitle">Lenguajes Backend</h3>
-					</div>
-				</div>
-				<div class="container row">
-					<div class="col-sm-4 mb-4" v-for="(lbackend, index1) in model.backend">
-						<div class="card" style="height: 100%!important">
-							<div class="card-body">
-								<h5 class="card-title text-center">{{lbackend.name}}</h5>
-								<p class="card-text">{{lbackend.icono}}</p>
-								<ul v-for="(fbackend, index2) in lbackend.frameworks" class="p-0">
-									<l1><img :src="fbackend.icono" style="height: 2rem; width: 2rem;" alt="">{{fbackend.name}}</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="mt-4 col-sm-12 row mb-2">
-					<div class="d-inline-flex p-2 bd-highlight">
-						<h3 class="font-subtitle">Lenguajes Frontend</h3>
-					</div>
-				</div>
-				<div class="container row">
-					<div class="col-sm-4 mb-4" v-for="(lfronted, index3) in model.fronted">
-						<div class="card" style="height: 100%!important">
-							<div class="card-body">
-								<h5 class="card-title text-center">{{lfronted.name}}</h5>
-								<p class="card-text">{{lfronted.icono}}</p>
-								<ul v-for="(ffrontend, index4) in lfronted.frameworks" class="p-0">
-									<l1><img :src="ffrontend.icono" style="height: 2rem; width: 2rem;" alt="">{{ffrontend.name}}</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-                <div class="mt-4 col-sm-12 row mb-2">
-                    <div class="d-inline-flex p-2 bd-highlight">
-                        <h3 class="font-subtitle">Entornos Nativos</h3>
-                    </div>
-                </div>
-                <div class="container row">
-                    <div class="col-sm-4 mb-4" v-for="(enativos, index5) in model.entornos">
-                        <div class="card" style="height: 100%!important">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">{{enativos.name}}</h5>
-                                <p class="card-text">{{enativos.icono}}</p>
-                                <ul v-for="(enativos, index6) in enativos.nativos" class="p-0">
-                                    <l1><img :src="enativos.icono" style="height: 2rem; width: 2rem;" alt="">{{enativos.name}}</li>
-                                </ul>
+                <div class="card mb-4" style="background-color:#f3f3f3">
+					<div class="card-body">
+                        <div class="mt-4 col-sm-12 row mb-2">
+                            <div class="d-inline-flex p-2 bd-highlight">
+                                <h3 class="font-subtitle">Lenguajes Backend</h3>
+                            </div>
+                        </div>
+                        <div class="container row">
+                            <div class="col-sm-4 mb-4" v-for="(lbackend, index1) in model.backend">
+                                <div class="card" style="height: 100%!important">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">{{lbackend.name}}</h5>
+                                        <p class="card-text">{{lbackend.icono}}</p>
+                                        <ul v-for="(fbackend, index2) in lbackend.frameworks" class="p-0">
+                                            <l1><img :src="fbackend.icono" style="height: 2rem; width: 2rem;" alt="">{{fbackend.name}}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 col-sm-12 row mb-2">
+                            <div class="d-inline-flex p-2 bd-highlight">
+                                <h3 class="font-subtitle">Lenguajes Frontend</h3>
+                            </div>
+                        </div>
+                        <div class="container row">
+                            <div class="col-sm-4 mb-4" v-for="(lfronted, index3) in model.fronted">
+                                <div class="card" style="height: 100%!important">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">{{lfronted.name}}</h5>
+                                        <p class="card-text">{{lfronted.icono}}</p>
+                                        <ul v-for="(ffrontend, index4) in lfronted.frameworks" class="p-0">
+                                            <l1><img :src="ffrontend.icono" style="height: 2rem; width: 2rem;" alt="">{{ffrontend.name}}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 col-sm-12 row mb-2">
+                            <div class="d-inline-flex p-2 bd-highlight">
+                                <h3 class="font-subtitle">Entornos Nativos</h3>
+                            </div>
+                        </div>
+                        <div class="container row">
+                            <div class="col-sm-4 mb-4" v-for="(enativos, index5) in model.entornos">
+                                <div class="card" style="height: 100%!important">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">{{enativos.name}}</h5>
+                                        <p class="card-text">{{enativos.icono}}</p>
+                                        <ul v-for="(enativos, index6) in enativos.nativos" class="p-0">
+                                            <l1><img :src="enativos.icono" style="height: 2rem; width: 2rem;" alt="">{{enativos.name}}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 col-sm-12 row mb-2">
+                            <div class="d-inline-flex p-2 bd-highlight">
+                                <h3 class="font-subtitle">Bases de datos</h3>
+                            </div>
+                        </div>
+                        <div class="container row">
+                            <div class="col-sm-4 mb-4" v-for="(database, index7) in model.bd">
+                                <div class="card" style="height: 100%!important">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">{{database.name}}</h5>
+                                        <p class="card-text">{{database.icono}}</p>
+                                        <ul v-for="(db, index8) in database.db" class="p-0">
+                                            <l1><img :src="db.icono" style="height: 2rem; width: 2rem;" alt="">{{db.name}}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4 col-sm-12 row mb-2">
+                            <div class="d-inline-flex p-2 bd-highlight">
+                                <h3 class="font-subtitle">Versionamiento</h3>
+                            </div>
+                        </div>
+                        <div class="container row">
+                            <div class="col-sm-4 mb-4" v-for="(version, index9) in model.versionadores">
+                                <div class="card" >
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">{{version.name}}</h5>
+                                    <p class="card-text">{{version.icono}}</p>
+                                    <ul v-for="(lversionadores, index10) in version.lista" class="p-0">
+                                        <l1><img :src="lversionadores.icono" style="height: 2rem; width: 2rem;" alt="">{{lversionadores.name}}</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mt-4 col-sm-12 row mb-2">
-					<div class="d-inline-flex p-2 bd-highlight">
-						<h3 class="font-subtitle">Bases de datos</h3>
-					</div>
-				</div>
-				<div class="container row">
-					<div class="col-sm-4 mb-4" v-for="(database, index7) in model.bd">
-						<div class="card" style="height: 100%!important">
-							<div class="card-body">
-								<h5 class="card-title text-center">{{database.name}}</h5>
-								<p class="card-text">{{database.icono}}</p>
-								<ul v-for="(db, index8) in database.db" class="p-0">
-									<l1><img :src="db.icono" style="height: 2rem; width: 2rem;" alt="">{{db.name}}</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="mt-4 col-sm-12 row mb-2">
-					<div class="d-inline-flex p-2 bd-highlight">
-						<h3 class="font-subtitle">Versionamiento</h3>
-					</div>
-				</div>
-				<div class="container row">
-					<div class="col-sm-4 mb-4" v-for="(version, index9) in model.versionadores">
-						<div class="card" >
-						<div class="card-body">
-							<h5 class="card-title text-center">{{version.name}}</h5>
-							<p class="card-text">{{version.icono}}</p>
-							<ul v-for="(lversionadores, index10) in version.lista" class="p-0">
-								<l1><img :src="lversionadores.icono" style="height: 2rem; width: 2rem;" alt="">{{lversionadores.name}}</li>
-							</ul>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 	`,
