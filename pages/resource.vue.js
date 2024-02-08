@@ -18,23 +18,30 @@ let Resource = Vue.component('Resource', {
                             }
                         ]
                     },
-                    {
-                        name: 'JAVA',
-                        icono: '',
-                        frameworks: [{
-                            name: 'SpringFramework',
-                            icono: '../img/icons/spring.png',
-                            estado: ''
-                        }]
-                    },
+                    // {
+                    //     name: 'JAVA',
+                    //     icono: '',
+                    //     frameworks: [{
+                    //         name: 'SpringFramework',
+                    //         icono: '../img/icons/spring.png',
+                    //         estado: ''
+                    //     }]
+                    // },
                     {
                         name: 'NODE',
                         icono: '',
-                        frameworks: [{
+                        frameworks: [
+                            {
                             name: 'Express',
                             icono: '../img/icons/express.png',
                             estado: ''
-                        }]
+                            },
+                            {
+                                name: 'Nest',
+                                icono: '../img/icons/nest.png',
+                                estado: ''
+                            }
+                        ]
                     },
                 ],
                 fronted: [{
@@ -51,15 +58,15 @@ let Resource = Vue.component('Resource', {
                                 estado: ''
                             },
                             {
-                                name: 'Angular js',
+                                name: 'Angular js, Angular 2',
                                 icono: '../img/icons/angular.svg',
                                 estado: ''
                             },
-                            {
-                                name: 'React js',
-                                icono: '../img/icons/react.png',
-                                estado: ''
-                            }
+                            // {
+                            //     name: 'React js',
+                            //     icono: '../img/icons/react.png',
+                            //     estado: ''
+                            // }
                         ]
 
                     },
@@ -76,60 +83,72 @@ let Resource = Vue.component('Resource', {
                                 icono: '../img/icons/boostrap.png',
                                 estado: ''
                             },
-                            {
-                                name: 'Bootstrap-Vue',
-                                icono: '../img/icons/boostrapvue.png',
-                                estado: ''
-                            },
+                            // {
+                            //     name: 'Bootstrap-Vue',
+                            //     icono: '../img/icons/boostrapvue.png',
+                            //     estado: ''
+                            // },
                             {
                                 name: 'FontAwesome',
                                 icono: '../img/icons/fontawesome.svg',
                                 estado: ''
                             },
-                            {
-                                name: 'PrimeFaces',
-                                icono: '../img/icons/primefaces.png',
-                                estado: ''
-                            }
+                            // {
+                            //     name: 'PrimeFaces',
+                            //     icono: '../img/icons/primefaces.png',
+                            //     estado: ''
+                            // }
                         ]
 
                     }
                 ],
-                entornos: [{
-                    name: 'Entornos Nativos',
-                    icono: '',
-                    nativos: [{
-                            name: 'Expo (basado en react-native)',
-                            icono: '../img/icons/expo.png',
-                            estado: ''
-                        },
-                    ]
-                }],
-                bd: [{
-                    name: 'Relacionales',
-                    icono: '',
-                    db: [{
-                            name: 'MySql',
-                            icono: '../img/icons/mysql.png',
-                            estado: ''
-                        },
-                        {
-                            name: 'PostgreSql',
-                            icono: '../img/icons/postgresql.svg',
-                            estado: ''
-                        },
-                        {
-                            name: 'SqlServer',
-                            icono: '../img/icons/sqlserver.png',
-                            estado: ''
-                        },
-                        {
-                            name: 'SQLite',
-                            icono: '../img/icons/sqlite.png',
-                            estado: ''
-                        },
-                    ]
-                }],
+                // entornos: [{
+                //     name: 'Entornos Nativos',
+                //     icono: '',
+                //     nativos: [{
+                //             name: 'Expo (basado en react-native)',
+                //             icono: '../img/icons/expo.png',
+                //             estado: ''
+                //         },
+                //     ]
+                // }],
+                bd: [
+                    {
+                        name: 'Relacionales',
+                        icono: '',
+                        db: [{
+                                name: 'MySql',
+                                icono: '../img/icons/mysql.png',
+                                estado: ''
+                            },
+                            {
+                                name: 'PostgreSql',
+                                icono: '../img/icons/postgresql.svg',
+                                estado: ''
+                            },
+                            // {
+                            //     name: 'SqlServer',
+                            //     icono: '../img/icons/sqlserver.png',
+                            //     estado: ''
+                            // },
+                            // {
+                            //     name: 'SQLite',
+                            //     icono: '../img/icons/sqlite.png',
+                            //     estado: ''
+                            // },
+                        ]
+                    },
+                    {
+                        name: 'No relacionales',
+                        icono: '',
+                        db: [{
+                                name: 'Mongo',
+                                icono: '../img/icons/mongo.png',
+                                estado: ''
+                            },
+                        ]
+                    },
+                ],
                 versionadores: [{
                     name: 'Git',
                     icono: '',

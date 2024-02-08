@@ -172,12 +172,10 @@ let Project = Vue.component('Project', {
                                         <p class="card-text"><b>Tipo:</b>{{propios.type}}</p>
 
                                         <div class="col-sm-12">
-                                            <!--
-                                            <a :href="propios.url" class="btn btn-primary" target="_blank">Go GitHub</a>
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <a :href="propios.url" class="btn btn-primary" target="_blank">Ir a GitHub</a>
+                                            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                 Go to Video
-                                            </button>
-                                            -->
+                                            </button>-->
                                         </div>
                                     </div>
                                 </div>

@@ -49,8 +49,33 @@ let Home = Vue.component('Home', {
 		},
 		edad(){
 			let anhoNacimiento = 1996
+			let mesNacimiento = 6
+			let diaNacimiento = 1
+
 			let fechaActual = new Date();
-            this.model.edad = fechaActual.getFullYear()- anhoNacimiento;
+			let mesActual = fechaActual.getMonth()+1
+			let diaActual = fechaActual.getDate()
+			let anhoActual = fechaActual.getFullYear()
+
+			console.log(
+				anhoNacimiento,
+				mesNacimiento,
+				diaNacimiento,
+
+				mesActual,
+				diaActual,
+				anhoActual,
+			)
+
+			if(mesActual<mesNacimiento){
+				this.model.edad = ( anhoActual - 1)- anhoNacimiento;
+			}
+			if(mesActual>=mesNacimiento){
+				if(diaNacimiento>=diaActual){
+					this.model.edad = anhoActual - anhoNacimiento;
+				}
+			}
+
 		}
 	},
 	template: `
@@ -90,7 +115,7 @@ let Home = Vue.component('Home', {
 							generacion de reportes y creaci&oacute;n de modulos personalizados para agencias privadas.
 							</p>
 							<p>
-							Entre las tecnologias que e trabajado se encuentran Java, JSF, JPA, Php, Laravel, Codeigniter, Node, Nest, Angular, Vue y JQuery.
+							Entre las tecnologias que e trabajado se encuentran Php, Laravel, Codeigniter, Node, Nest, Angular, Vuem React y JQuery.
 							Tambien e usado librerias como lo son FullCalendar, Moment, SweetAlert entre otras las cuales me han ayudado a realizar los procesos que los clientes necesitan.
 							</p>
 							<p>
